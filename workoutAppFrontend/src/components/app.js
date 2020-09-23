@@ -1,7 +1,8 @@
 class App{
     constructor(){
+        this.adapter = new BaseAdapter('http://localhost:3000')
         this.initBindingsAndEventListeners()
-        this.renderPage(new SignupPage(this.pageContainer))
+        this.renderPage(new SignupPage(this.pageContainer, this.adapter))
     }
     initBindingsAndEventListeners(){
         this.container = document.querySelector('#app-container')
@@ -11,5 +12,6 @@ class App{
     }
     renderPage(page){
         page.render()
+        // new SignupPage()
     }
 }
