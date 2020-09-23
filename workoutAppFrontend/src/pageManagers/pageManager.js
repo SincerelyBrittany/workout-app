@@ -25,7 +25,7 @@ class PageManager{
     // }
 
     // handleError(err){
-    //     if(err.type === "Authorizaiton Error"){
+    //     if(err.type === "Authorization Error"){
     //         this.handleAlert(err.msg)
     //         this.redirect('welcome')
     //     }else{
